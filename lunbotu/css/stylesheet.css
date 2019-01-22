@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+#main-div{
+    margin: 250px auto;
+    width: 876px;
+    height: 482px;
+    position: relative;
+    overflow: hidden;
+}
+.main-img{
+    position: absolute;
+}
+
+#arrow_l,
+#arrow_r{
+    position: absolute;
+    top: 50%;
+    background-color: rgb(255, 255, 255,0.4);
+    cursor: pointer;
+}
+#arrow_l{
+    left: 0;
+}
+#arrow_r{
+    right: 0;
+}
+#button{
+    position: absolute;
+    bottom: 10px;
+    left: 382px;
+}
+.circle_button{
+    float: left;
+    margin-left:10px;
+}
+.circle_button div{
+    height: 10px;
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+}
+#button li:first-child div{
+    background-color:red;
+}
