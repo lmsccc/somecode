@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.clearfix:after{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	.clearfix{*zoom: 1;}
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+		/*header开始*/
+		header{
+			height: 990px;
+			width: 100%;
+			background: url(image/shadow1.png) no-repeat,
+			            url(image/background1.png) no-repeat;
+			background-size: cover;
+			text-align: center;
+            overflow: hidden;
+		}
+		header .title{
+            height: 134px;
+		}
+		header .text{
+			height: 168px;
+		}
+		header h2{
+            margin-top: 210px;
+            color: #fff;
+            font-size: 62px;
+            font-weight: normal;
+		}
+		header p{
+			color: #d0cfcf;
+			size: 20px;
+			line-height: 33px;
+		}
+		.sign{
+			height: 250px;
+			width: 970px;
+			margin: 17px auto 0;
+			border-top: #56544d solid 1px; 
+			border-bottom: #56544d solid 1px;
+		}
+		.sign h5{
+			font-size: 16px;
+			color: #f6f6f6;
+			margin-top: 45px;
+			font-weight: normal;
+			line-height: 33px;
+			letter-spacing: 2px;
+		}
+		.sign p{
+			font-size: 12px;
+            color: #84827e;
+            letter-spacing: 1px;
+		}
+		.sign form{
+			display: flex;
+			justify-content: space-around;
+			padding: 0 100px;
+		}
+		.account,
+		.password{
+			height: 50px;
+			width: 270px;
+			border: #56544d solid 1px;
+			background-color: rgba(0, 0, 0, 0);
+			margin-top: 40px;
+			border-radius: 3px;
+			outline: none;
+			padding-left: 20px; 
+			font-size: 14px;
+		}
+		.account{
+			color: #fff;
+		}
+		.password{
+			color: #81807e;
+		}
+		.submit{
+			margin-top: 40px;
+			width: 127px;
+			height: 50px;
+			border-radius: 3px;
+			background-color: #fff;
+			outline: none;
+			border: none;
+			font-size: 12px;
+		}
+		/*header结束*/
+		/*feature1开始*/
+		.feature1{
+			height: 710px;
+			width: 100%;
+			text-align: center;
+			overflow: hidden;
+		}
+		.feature1 h5{
+			margin-top: 90px;
+			color: #5b5b5b;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+		.feature1 .text{
+			line-height: 60px;
+			color: #141414;
+			font-size: 42px;
+			margin-top: 25px;
+		}
+		.feature1 .features{
+			margin: 75px auto 0;
+			width: 1030px;
+		}
+	    .mobile,
+	    .accessibility,
+	    .fluidtypography,
+	    .customization{
+	    	width: 430px;
+	    	/*height: 120px;*/
+	    	display: inline-block;
+	    }
+	    .mobile,
+	    .fluidtypography{
+	    	float: left;
+	    }
+	    .accessibility,
+	    .customization{
+	    	float: right;
+	    }
+	    .fluidtypography,
+	    .customization{
+	    	margin-top: 80px;
+	    }
+	    .feature1 .features h6{
+	    	text-align: left;
+	    	font-size: 20px;
+	    	font-weight: normal;
+	    }
+		.feature1 .features p{
+            font-size: 16px;
+            color: #797979;
+            line-height: 27px;
+            text-align: left;
+            margin-top: 15px;
+		}
+		.features img{
+			float: left;
+		}
+		.mobile div,
+	    .accessibility div,
+	    .fluidtypography div,
+	    .customization div
+		{   
+          padding-left: 60px;
+		}
+		/*feature1结束*/
+		/*callToAction开始*/
+		.callToAction{
+			height: 800px;
+			width: 100%;
+			background: url(image/shadow2.png) no-repeat,
+			            url(image/background2.png) no-repeat;
+			background-size: cover;
+			overflow: hidden;
+		}
+		.callToAction h5{
+            font-size: 36px;
+            color: #fff;
+            font-weight: normal;
+            line-height: 50px;
+		}
+		.callToAction p{
+			font-size: 18px;
+			color: #868a86;
+			line-height: 27px;
+			margin-top: 80px;
+		}
+		.callToAction .left{
+			padding-left: 315px;
+			margin-top: 185px;
+			float: left;
+			
+		}
+		.callToAction .text{
+			width: 370px;
+		}
+		.callToAction .buttons{
+			height: 60px;
+			float: left;
+			margin-top: 63px;
+		}
+		.callToAction input{
+			outline: none;
+			border: 0;
+			height: 60px;
+			width: 240px;
+			background-color: #fff;
+			border-radius: 2px;
+			margin-right: 27px;
+		}
+		.buttons input:last-child{
+			background-color: rgba(0, 0, 0, 0);
+			border: #56544d solid 1px;
+			color: #d8d9d8;
+		}
+        .ipad{
+        	height: 600px;
+        	width: 645px;
+        	border: #56544d solid 2px;
+        	border-right: 0; 
+        	background: url(image/Screen.png) right center no-repeat;
+        	float:right;
+        	margin-top: 105px;
+        	border-radius: 50px 0 0 50px;
+        	position: relative;
+        }
+        .home{
+        	width: 9px;
+        	height: 10px;
+        	border: #56544d solid 2px;
+        	border-radius: 50%;
+        	position: absolute;
+            left: 30px;
+            top:50%;
+            transform: translate(0,-50%);
+        }
+		/*callToAction结束*/
+		/*feature2开始*/
+		.feature2{
+            height: 580px;
+            width: 100%;
+            text-align: center;
+            border-bottom: #e7e7e7 solid 1px;
+		}
+		.feature2 h5{
+			font-size: 42px;
+			font-weight: normal;
+			margin-top: 90px;
+		}
+		.feature2>div{
+			margin: 80px auto 0;
+			display: flex;
+			justify-content: center;
+		}
+		.singleton,
+		.hero,
+		.portland{
+			text-align: center;
+			width: 270px;
+		}
+		.singleton p,
+		.hero p,
+		.portland p{
+			margin-top: 45px;
+			color: #797979;
+			line-height: 27px;
+		}
+		.hero{
+			margin:0 200px 0 200px;
+		}
+		/*feature2结束*/
+		/*feature3开始*/
+		.feature3 {
+			height: 1000px;
+			width: 100%;
+			border-bottom: #e7e7e7 solid 1px;
+			overflow: hidden;
+		}
+		.leave{
+			width: 1250px;
+			margin: 114px auto 0;
+		}
+		.leavepicture{
+			width: 570px;
+			height: 350px;
+			background: url(image/leave.png) -79px -148px no-repeat;
+			float: left;
+		}
+		.birdpicture{
+			width: 570px;
+			height: 350px;
+			background: url(image/bird.png) -3px -99px no-repeat;
+			float: right;
+		}
+		.bird{
+			width: 1250px;
+			margin: 80px auto 0;
+		}
+
+		.feature3 .text{
+			width: 400px;
+			/*float: right;*/
+			display: inline-block;
+			margin-top: 40px;
+					}
+		.feature3 .leave .text{
+			float: right;
+		}
+		.feature3 .bird .text{
+			float: left;
+		}
+		.feature3 h6{
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 35px;
+		}
+		.feature3 p{
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #a0a0a0;
+		}
+		/*feature3结束*/
+		/*team开始*/
+        .team{
+        	height: 1100px;
+        	width: 100%;
+        	text-align: center;
+        	overflow: hidden;
+        	border-bottom: #e7e7e7 solid 1px;
+        }
+        .team h5{
+            margin-top: 105px;
+            font-size: 42px;
+            font-weight: normal;
+        }
+        .team p{
+        	width: 810px;
+        	font-size: 18px;
+        	color: #797979;
+        	margin: 30px auto 0;
+        	line-height: 30px;
+        }
+        .teachers{
+        	width: 970px;
+        	margin: 70px auto 0;
+        }
+        .teacher1,
+        .teacher2,
+        .teacher3,
+        .teacher4{
+        	width: 470px;
+            height: 340px;
+            border-radius: 1px;
+        }
+        .teacher1,
+        .teacher3{
+        	float:left;
+        }
+        .teacher2,
+        .teacher4{
+        	float:right;
+        }
+        .teacher3,
+        .teacher4{
+        	margin-top: 30px;
+        }
+        .teacher1{
+            background: url(image/teacher1.png) /*-25px -25px*/ no-repeat;
+        }
+        .teacher2{
+            background: url(image/teacher2.png) -25px -25px no-repeat;
+        }
+        .teacher3{
+            background: url(image/teacher3.png) /*-25px -25px*/ no-repeat;
+        }
+        .teacher4{
+            background: url(image/teacher4.png) -25px -25px no-repeat;
+        }
+        .team a{
+        	/*display: inline-block;*/
+        }
+        .teachers .name{
+        	padding-top: 110px;
+        	font-size: 20px;
+        	color: #fff;
+        }
+        .teachers .position{
+        	padding-top: 15px;
+        	font-size: 12px; 
+        	color: #fff;
+        	letter-spacing: 2px; 
+        }
+        .teachers .icon{
+        	width: 470px;
+        	margin:10px auto;
+        	display: flex;
+        	justify-content: center;
+        }
+        .teachers .icon div{
+            display: inline-block;
+            width: 51px;
+            height: 55px;
+            border: #7c7d7a solid 1px;
+            position: relative;
+            border-radius: 50%
+        }
+        .teachers .icon div:nth-child(2){
+        	margin:0 30px;
+        }
+        .teachers .icon img{
+        	position: absolute;
+        	top:50%;
+        	left: 50%;
+        	transform: translate(-50%,-50%);
+        }
+        .team .background{
+        	width: 100%;
+        	height: 100%;
+        	opacity:0;
+        }
+        .team .background:hover{
+            background: url(image/shadow3.png) no-repeat;
+            opacity:0.9;
+        }
+		/*team结束*/
+		/*contact开始*/
+		.contact{
+			height: 700px;
+			width: 100%;
+		}
+		.write{
+			width: 470px;
+			height: 560px;
+			text-align: center;
+			margin-top: 70px;
+			overflow: hidden;
+			border: #e7e7e7 solid 1px;
+			border-radius: 15px;
+			float: left;
+		}
+		.contact>div{
+			width: 1250px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.contact h6{
+			font-size: 16px;
+			color: #313131;
+			font-weight: normal;
+			letter-spacing: 1px;
+			margin-top: 50px;
+			margin-bottom: 44px;
+		}
+		.write input[type=text]{
+			width: 350px;
+			height: 50px;
+			margin-bottom: 30px;
+			border:#d4d3d3 solid 1px;
+			border-radius: 4px;
+			outline: none;
+			padding-left: 20px;
+			font-size: 14px;
+			color: #a6a6a6;
+		}
+		.write textarea{
+			width: 350px;
+			height: 125px;
+			resize: none;
+			outline: none;
+			border:#d4d3d3 solid 1px;
+			border-radius: 4px;
+			margin-bottom: 30px;
+			padding-left: 20px;
+			padding-top: 20px;
+			font-size: 14px;
+			color: #a6a6a6;
+		}
+		.write input[type=button]{
+			width: 370px;
+			height: 50px;
+			background-color: #000;
+			color: #fff;
+			letter-spacing: 1px;
+			outline: none;
+			border: 0;
+			border-radius: 4px;
+		}
+        .contact .contacts{
+        	width: 470px;
+			height: 560px;
+        	float:right;
+        	margin-top: 70px;
+        }
+        .contact .contacts h5{
+        	margin-top: 80px;
+        	font-size: 42px;
+        	font-weight: normal;
+        }
+        .contact .contacts p{
+        	margin-top: 30px;
+        	line-height: 30px;
+        	color: #797979;
+        	word-break: keep-all;
+        }
+        .maps,
+        .phone,
+        .mail{
+        	width: 268px;
+        	height: 46px;
+        	padding-left: 40px;
+        	color: #141414;
+        	font-size: 16px;
+        }
+        .maps{
+        	background: url(image/MapIcon.png) 0 0 no-repeat;
+            margin-top: 70px;
+        }
+        .phone{
+        	background: url(image/PhoneIcon.png) 0 0 no-repeat;
+        	margin-top: 20px;
+        }
+        .mail{
+        	background: url(image/MailIcon.png) 0 0 no-repeat;
+
+        }
+		/*contact结束*/
+		/*footer开始*/
+		footer{
+			width: 100%;
+			height: 410px;
+			background-color: #000;
+		}
+		footer .menus{
+			height: 100%;
+			width: 1400px;
+			margin: 0 auto;
+		}
+		footer dl{
+			display: inline-block;
+			color: #fff;
+			margin-top: 70px;
+			float:left;
+			padding-right:200px;
+		}
+		footer dt{
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+		footer dd{
+            margin-top: 25px;
+            color: #565656;
+            font-size: 16px;
+		}
+		footer a{
+			margin-top: 25px;
+            color: #565656;
+            font-size: 16px;
+		}
+		footer .enjoy{
+			width: 250px;
+			float: right;
+			color: #fff;
+			margin-top: 70px;
+			margin-right: 40px;
+		}
+		footer .enjoy p:first-child{
+			letter-spacing: 1px;
+		}
+		footer .enjoy p:nth-child(2){
+			margin-top: 20px;
+			color: #565656;
+		}
+		footer .logo{
+			margin-top:35px;
+		}
+		footer .logo img{
+			padding-right: 20px;
+		}
+		/*footer结束*/
+	</style>
+</head>
+<body>
+    <header>
+    	<div class="title"><h2>Hello world</h2></div>
+    	<div class="text"><p>China is speeding up strategic plan, standards, traffic rules, laws and regulations on acci-<br>dent-incurred liabilities for its smart car industry, Economic Information Daily reported<br> Thursday. </p></div>
+    	<div class="sign">
+    		<h5>CREATE YOUR ACCOUNT</h5>
+    		<P>IT IS ABSOLUTELY FREE</P>
+    		<div class="register">
+    		    <form>
+    		    	<input type="text" class="account" value="denis@getcraftwork.com">
+    		        <input type="text" class="password" value="Create your password">
+    		        <input type="submit" class="submit" value="SIGN UP">
+    		    </form>
+    	    </div>
+    	</div>
+    </header>
+    <div class="feature1">
+    	<h5>BOATLOADS OF AWESOME</h5>
+    	<p class="text">Ready-made, customizable, HTML landing<br> page sections</p>
+    	<div class="features clearfix ">
+    		<div class="mobile">
+    			<img src="image/IphoneIcon.png">
+    			<div>
+    			    <h6>Mobile First</h6>
+    			    <P>All modulz are built mobile-first for maximum device compatibility.</P>
+    		    </div>
+    		</div>
+    		<div class="accessibility">
+    			<img src="image/CheckIcon.png"> 
+    			<div>
+    				<h6>Accessibility</h6>
+    			    <p>Support for IE8, mobile and tablet devices, screenreaders and color blind.</p>
+    				
+    			</div>			
+    		</div>
+    		<div class="fluidtypography">
+    			<img src="image/PencilIcon.png">
+    			<div>
+    				<h6>Fluid Typography</h6>
+    			    <P>On different screen sizes, fonts automagically scale with the viewport.</P>
+    			</div>
+    		</div>
+    		<div class="customization">
+    			<img src="image/SettingsIcon.png">
+    			<div>
+    				<h6>Customization</h6>
+    			    <p>Make any design your own using the Style Editor. Personalize fonts, colors, and layouts to create the custom look you want.</p>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+    <div class="callToAction">
+    	<div class="left">
+    		<div class="text">
+    		    <h5>Supportive policies for China's smart car</h5>
+    	        <p>China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.</p>
+    	    </div>
+            <div class="buttons">
+    		    <input type="button" value="CHECK OUT FEATURES">
+    	        <input type="button" value="TRY PRODUCT FOR FREE">
+            </div>
+    	</div>
+        <div class="ipad">
+        	<div class="home">
+        		
+        	</div>
+        	<!-- <img src="image/screen.png"> -->
+        </div>
+    </div>
+    <div class="feature2">
+    	<h5>Try Our Awesome Products</h5>
+    	<div class="clearfix">
+    		<div class="singleton"><img src="image/Singleton.png"><p>Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' committee, said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.</p></div>
+    		<div class="hero"><img src="image/Hero.png"><p>Li said the smart car industry is able to enlarge the current car industry by 1 trillion yuan ($158.15 billion) and also able to boost fast development in 5G, internet of cars, big data, artificial intelligence and new-energy vehicles.</p></div>
+    		<div class="portland"><img src="image/Portland.png"><p>Zhang Junyi, a partner with NIO Capital, said that the smart car is the trend for the car industry and China's auto sector will usher in a new key development stage with the improvement of infrastructure, technology, policies and laws.</p></div>
+    	</div>
+    </div>
+    <div class="feature3">
+    	<div class="leave clearfix">
+    		<div class="leavepicture">
+    		</div>
+    		<div class="text">
+    		    <h6>
+    		        Learn How to Improve Your Personal Business
+    	        </h6>
+    		    <p>
+    			    Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' committee, said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.
+    		    </p>	
+    		</div>
+    		
+    	</div>
+    	<div class="bird clearfix">
+    		<div class="birdpicture">
+    		</div>
+    		<div class="text">
+    			<h6>
+    			    Choose Between Two Beautifully Designed Color Schemes.
+    		    </h6>
+    		    <p>
+    			    China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.
+    		    </p>
+    		</div>
+    		
+    	</div>
+    </div>
+    <div class="team">
+    	<h5>Our Awesome Crew</h5>
+    	<p>Our unique online teaching style makes learning easy for everyone. Whether you are trying to land a new job, brush up on your skills.</p>
+    	<div class="teachers clearfix">
+    	    <a href="#" class="teacher1" target="_blank">
+    	    	<div class="background">
+    	    		<div class="name">Ethan Dutton</div>
+    	    	    <div class="position">SENIOR VISUAL DESIGNER</div>
+    	    	    <div class="icon">
+    	    		    <div><img src="image/FacebookIcon.png"></div>
+    	    		    <div><img src="image/TwitterIcon.png"></div>
+    	    		    <div><img src="image/InstagramIcon.png"></div>
+    	            </div>
+    	        </div>
+    	    </a>
+    	    <a href="#" class="teacher2">
+    	    	<div class="background">
+    	    		<div class="name">Ethan Dutton</div>
+    	    	    <div class="position">SENIOR VISUAL DESIGNER</div>
+    	    	    <div class="icon">
+    	    		    <div><img src="image/FacebookIcon.png"></div>
+    	    		    <div><img src="image/TwitterIcon.png"></div>
+    	    		    <div><img src="image/InstagramIcon.png"></div>
+    	            </div>
+    	        </div>
+    	    </a>
+    	    <a href="#" class="teacher3">
+    	    	<div class="background">
+    	    		<div class="name">Ethan Dutton</div>
+    	    	    <div class="position">SENIOR VISUAL DESIGNER</div>
+    	    	    <div class="icon">
+    	    		    <div><img src="image/FacebookIcon.png"></div>
+    	    		    <div><img src="image/TwitterIcon.png"></div>
+    	    		    <div><img src="image/InstagramIcon.png"></div>
+    	            </div>
+    	        </div>
+    	    </a>
+    	    <a href="#" class="teacher4">
+    	    	<div class="background">
+    	    		<div class="name">Ethan Dutton</div>
+    	    	    <div class="position">SENIOR VISUAL DESIGNER</div>
+    	    	    <div class="icon">
+    	    		    <div><img src="image/FacebookIcon.png"></div>
+    	    		    <div><img src="image/TwitterIcon.png"></div>
+    	    		    <div><img src="image/InstagramIcon.png"></div>
+    	            </div>
+    	        </div>
+    	    </a>
+        </div>
+    </div>
+    <div class="contact">
+    	<div class="clearfix">
+    		<div class="write">
+    		    <h6>FELL FREE TO WRITE US</h6>
+    		    <input type="text" value="E-mail">
+    		    <input type="text" value="Subject">
+    		    <textarea value="Message" placeholder="Message"></textarea>
+    		    <input type="button" value="SEND">
+    	    </div>
+    	    <div class="contacts">
+    		    <h5>Contacts</h5>
+    		    <p>Make any design your own using the Style Editor. Persona-lize fonts, 
+    		    colors, and layouts to create the custom look you want.</p>
+    		    <div class="maps">360 King Street<br>Feastrvale Trevose, PA 19057</div>
+    		    <div class="phone">(755) 564-84-12</div>
+    		    <div class="mail">youname@mail.com</div>
+    	    </div>
+        </div>
+    </div>
+    <footer>
+    	<div class="menus clearfix">
+    		<dl>
+    			<dt>LEARN MORE</dt>
+    			<dd><a href="">How it works?</a></dd>
+    			<dd><a href="">Meeting tools</a></dd>
+    			<dd><a href="">Live streaming</a></dd>
+    			<dd><a href="">Contact method</a></dd>
+    		</dl>
+    		<dl>
+    			<dt>ABOUT US</dt>
+    			<dd><a href="">About us?</a></dd>
+    			<dd><a href="">Features</a></dd>
+    			<dd><a href="">Privacy police</a></dd>
+    			<dd><a href="">Terms&Conditions</a></dd>
+    		</dl>
+    		<dl>
+    			<dt>SUPPORT</dt>
+    			<dd><a href="">F.A.Q.</a></dd>
+    			<dd><a href="">Contact us</a></dd>
+    			<dd><a href="">Live chat</a></dd>
+    			<dd><a href="">Phone call</a></dd>
+    		</dl>
+    		<div class="enjoy">
+    			<p>ENJOY YOUR LIFE</p>
+    			<P>Great web UI kit for designers, freelancers or business.</P>
+    			<div class="logo">
+    				<img src="image/TwitterIcon.png">
+    				<img src="image/FacebookIcon.png">
+    				<img src="image/GoogleIcon.png">
+    				<img src="image/TumblerIcon.png">
+    				<img src="image/PinterestIcon.png">
+    				<img src="image/LinkedInIcon.png">
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>

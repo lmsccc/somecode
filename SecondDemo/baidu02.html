@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 5000px;
+    }
+    li{
+      list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
+    /*sidebar开始*/
+    .sidebar{
+        width: 100px;
+        height: 100%;
+        background-color: #1d2531;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .chat{
+        height: 100px;
+        background-color: red;
+        margin-left: 350px;
+        width: 100%;
+    }
+    .item1,
+    .item2,
+    .item3,
+    .item4{
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 50%;
+    }
+    .item1{
+
+        background: #2499f2 url(image/Item1.png) center center no-repeat ;
+    }
+    .item2{
+
+        background: #8768e6 url(image/Item2.png) center center no-repeat;
+    }
+    .item3{
+
+        background: #ed4e31 url(image/Item3.png) center center no-repeat;
+    }
+    .item4{
+        border: #2d3848 solid 3px;
+        box-sizing: border-box;
+        background: url(image/PlusIcon.png) center center no-repeat;
+    }
+    .sidebar a{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+    .bottom{
+        position: absolute;
+        bottom: 20px;
+    }
+    .gird,
+    .setting{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+    }
+    .gird{
+        background: url(image/Grid.png) no-repeat;
+        margin-left: 26px;
+    }
+    .setting{
+        background: url(image/Settings.png) no-repeat;
+        margin-left: 16px;
+    }
+    /*sidebar结束*/
+    /*menu开始*/
+    .menu{
+        width: 250px;
+        height: 100%;
+        background-color: #222c3c;
+        position: fixed;
+        left: 100px;
+        top: 0;
+    }
+    .menu .title{
+        color: #586476;
+        position: relative;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .menu .title a{
+        position:absolute;
+        right: 0px;
+    }
+    .menu a{
+        color: #88919d;
+    }
+    .menu {
+        padding: 30px 30px 0 30px;
+        box-sizing: border-box;
+    }
+    .menu li{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .menu .products,
+    .menu .menu_son{
+        border-bottom: #2a3547 solid 0.5px;
+    }
+    .menu_son ul li:nth-child(3){
+        position: relative;
+    }
+    .menu_son ul li:nth-child(3) span{
+        background-color: #1c94ed;
+        display: inline-block;
+        width: 35px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 30px;
+        position: absolute;
+        right: 0px;
+        color: #fff;
+    }
+    .products{
+        margin-top: 25px;
+    }
+
+    .products li:nth-child(2) a{
+        background: url(image/BookofWisdom.png) no-repeat center left;
+        padding-left: 30px;
+    }
+    .products li:nth-child(3) a{
+        background: url(image/VideoCamera.png) no-repeat center left;
+        padding-left: 30px;
+    }
+    .products li:nth-child(4) a{
+        background: url(image/Painting.png) no-repeat center left;
+        padding-left: 30px;
+    }
+    .products li:nth-child(5) a{
+        background: url(image/Chart.png) no-repeat center left;
+        padding-left: 30px;
+    }
+    .dashboard{
+        margin-top: 25px;
+    }
+    .dashboard li:nth-child(2){
+        position: relative;
+    }
+    .dashboard li:nth-child(2) a{
+        color: #fff;
+    }
+    .dashboard li:nth-child(2) img{
+        position: absolute;
+        left: -35px;
+    }
+    .dashboard ul li:nth-child(2) span{
+        background-color: #1c94ed;
+        display: inline-block;
+        width: 35px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 30px;
+        position: absolute;
+        right: 0px;
+        color: #fff;
+    }
+    .dashboard ul li:nth-child(4){
+        position: relative;
+    }
+    .dashboard ul li:nth-child(4) span{
+        background-color: #e64428;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color: #fff;
+    }
+    .goals{
+        font-size: 14px;
+        color: #fff;
+        position: absolute;
+        bottom: 40px;
+    }
+    .goals span:nth-child(2){
+        margin-left: 12px;
+    }
+    .process{
+        width: 190px;
+        height: 4px;
+        background: url(image/Base.png) no-repeat,
+                    url(image/fill.png) no-repeat;
+        position: absolute;
+        bottom: 25px;
+    }
+    /*menu结束*/
+</style>
+<body>
+    <div class="sidebar">
+        <div class="item1"><a href="#"></a></div>
+        <div class="item2"><a href="#"></a></div>
+        <div class="item3"><a href="#"></a></div>
+        <div class="item4"><a href="#"></a></div>
+        <div class="bottom">
+            <div class="gird"><a href="#"></a></div><div class="setting"><a href="#"></a></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu_son">
+            <ul>
+                <li class="title">MENU<a href="#"><img src="image/Settings.png"></a></li>
+                <li><a href="#">OverView</a></li>
+                <li><a href="#">Sales</a><span>54</span></li>
+                <li><a href="#">Your Staff</a></li>
+                <li><a href="#">Analytics & Targeting</a></li>
+                <li><a href="#">What's New</a></li>
+            </ul>
+        </div>
+            <div class="products">
+                <ul>
+                    <li class="title">YOUR PRODUCTS<a href="#"><img src="image/Settings.png"></a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Stocks</a></li>
+                    <li><a href="#">Lnfographics</a></li>
+                </ul>
+            </div>
+            <div class="dashboard">
+                <ul>
+                    <li class="title">DASHBOARD<a href="#"><img src="image/Settings.png"></a></li>
+                    <li><img src="image/ActiveHighlight.png"><a href="#">Message</a><span>21</span></li>
+                    <li><a href="#">Connections</a></li>
+                    <li><a href="#">Integrations</a><span>!</span></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">App Settings</a></li>
+                </ul>
+            </div>
+            <div class="goals">
+                <span>Monthly Goals</span><span>$580/$3200</span>
+            </div>
+        <div class="process"></div>
+        </div>
+
+    <div class="chat"></div>
+</body>
+</html>
