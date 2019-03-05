@@ -7,3 +7,5 @@
 以后再修改吧~
 
 还有一个要做的就是增加定时自动滚动
+
+预览地址：https://lmsccc.github.io/somecode/lunbotu/main.html
